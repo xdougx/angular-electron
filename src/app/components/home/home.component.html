@@ -1,5 +1,16 @@
 <div class="container">
-  <h1 class="title">
-    {{title}}
-  </h1>
+  <h3>Lista de Coisas a Fazer</h3>
+  <div>
+    <input type="text" (keyup)="check_return($event)"  placeholder="Adicionar a Lista" #input_menssage>
+    <a href="#" (click)="add_item()">Add</a>
+    <a href="#" (click)="reset()">reset</a>
+
+    <a href="#" (click)="show_status()">Show API Status</a>
+  </div>
+  <div #error style="display:none"></div>
+  <ul>
+    <li *ngFor="let e of elements">
+      <span class="badge"></span> {{e}}
+    </li>
+  </ul>
 </div>
