@@ -1,0 +1,122 @@
+// component input
+$white: white;
+$border-input: #ebebeb;
+$border-input-active: $secondary;
+$text: #a5a5a5;
+$text-active: $secondary;
+
+.form-group{
+  padding-top: 16px;
+  margin-bottom: 19px;
+  position: relative;
+  > label{
+    position: absolute;
+    top: 22px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    // min-height: 46px;
+    transition: 0.2s ease all;
+    color: $text;
+    text-align: left;
+    pointer-events: none;
+
+    
+    color: $text-active;
+    font-size: 12px;
+    top: 0;
+    &:after{
+      visibility: visible;
+      width: 100%;
+      left: 0;
+    }
+  }
+  > .form-control{
+    display: block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $border-input;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    font-family: 'avenir_book';
+    font-size: 16px;
+  }
+  > textarea{ min-height: 30px; height: 160px!important; resize: none; }
+}
+
+.form-group.floating-label{
+  > label{
+    position: absolute;
+    top: 22px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.2s ease all;
+    font-size: 16px;
+    color: $text;
+    text-align: left;
+    pointer-events: none;
+    &:after{
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 45%;
+      width: 10px;
+      height: 2px;
+      visibility: hidden;
+      background-color: $border-input-active;
+      transition: 0.2s ease all;
+    }
+  }
+  > .form-control:focus, > .form-control.ng-dirty {
+    + label{
+      color: $text-active;
+      font-size: 12px;
+      top: 0;
+      &:after{
+        visibility: visible;
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.form-group.floating-label.white{
+  > label{ color: $white;
+    &:after{ background-color: $white; }
+  }
+  // > .form-control:not([ng-reflect-model]:empty), > .form-control[ng-reflect-model]:not(:empty) {
+  //   color: $white;
+  //   color: red;
+  // }
+  > .form-control{
+    color: $white;
+    &:focus{
+      + label{ color: $white; }
+      &:after{ background-color: $white; }
+    }
+    &.ng-dirty{
+      @extend :focus;
+    }
+  }
+}
+// input:not(:empty):not(:focus):invalid { border-color: #A22; box-shadow: none }
+// input:not([value=""]):not(:focus):invalid{
+//   background-color: tomato!important;
+// }
+// input[value]:not([value=""]){
+//   background-color: tomato!important;
+// }
+// form-control ng-pristine ng-valid ng-touched
+// form-control ng-valid ng-touched ng-dirty
+// form-control ng-valid ng-touched ng-dirty
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}

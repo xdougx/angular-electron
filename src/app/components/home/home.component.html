@@ -1,16 +1,31 @@
-<div class="container">
-  <h3>Lista de Coisas a Fazer</h3>
-  <div>
-    <input type="text" (keyup)="check_return($event)"  placeholder="Adicionar a Lista" #input_menssage>
-    <a href="#" (click)="add_item()">Add</a>
-    <a href="#" (click)="reset()">reset</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kana Mailer - V1</title>
 
-    <a href="#" (click)="show_status()">Show API Status</a>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  </head>
+
+  <div #sectionHome class="container-fluid">
+    <!-- <section class="col-md-12"> -->
+      <app-menu></app-menu>
+    <!-- </section> -->
+
+    <section class="col-md-12">
+      <header>
+        <h1>Kana Mailer</h1>
+        <small>The Kanamobi Mailer - Powered by Backend Team :D</small>
+      </header>  
+    </section>  
+
+    <article>
+      <h3>Testing</h3>
+    </article>
+
+    <user-list></user-list>
+
   </div>
-  <div #error style="display:none"></div>
-  <ul>
-    <li *ngFor="let e of elements">
-      <span class="badge"></span> {{e}}
-    </li>
-  </ul>
-</div>
+
+  </html>

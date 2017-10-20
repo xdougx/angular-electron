@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'avenir_book';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/AvenirLTStd-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gotham_bookregular';
+  src: url('/assets/fonts/gotham-book-webfont.eot');
+  src: url('/assets/fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/gotham-book-webfont.woff') format('woff'),
+       url('/assets/fonts/gotham-book-webfont.ttf') format('truetype'),
+       url('/assets/fonts/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham_boldregular';
+  src: url('/assets/fonts/gotham-bold-webfont.eot');
+  src: url('/assets/fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/gotham-bold-webfont.woff') format('woff'),
+       url('/assets/fonts/gotham-bold-webfont.ttf') format('truetype'),
+       url('/assets/fonts/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham_thinregular';
+  src: url('/assets/fonts/ufonts.com_gotham_thin-webfont.eot');
+  src: url('/assets/fonts/ufonts.com_gotham_thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/ufonts.com_gotham_thin-webfont.woff') format('woff'),
+       url('/assets/fonts/ufonts.com_gotham_thin-webfont.ttf') format('truetype'),
+       url('/assets/fonts/ufonts.com_gotham_thin-webfont.svg#gotham_thinregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham_medium';
+  src: url('/assets/fonts/gotham-medium.eot');
+  src: url('/assets/fonts/gotham-medium.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/gotham-medium.woff') format('woff'),
+       url('/assets/fonts/gotham-medium.ttf') format('truetype'),
+       url('/assets/fonts/gotham-medium.svg#gotham_medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

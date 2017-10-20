@@ -1,0 +1,48 @@
+// component button
+$white: white;
+$backgroud-button: $primary;
+$color-button: $white;
+
+.btn{
+  font-family: 'avenir_book';
+  font-size: 16px;
+  text-transform: uppercase;
+  
+  background-image: none;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 4.5px 30px 2.5px;
+  line-height: 1.84615385;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  outline: none;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+  
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn.btn-primary{
+  background-color: $backgroud-button;
+  color: $color-button;
+}
+.btn.btn-white{
+  background-color: $white;
+  color: $primary;
+}
+
+.btn-raised {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  -webkit-transition: -webkit-box-shadow 0.15s ease-out;
+  -moz-transition: -moz-box-shadow 0.15s ease-out;
+  -o-transition: -o-box-shadow 0.15s ease-out;
+  transition: box-shadow 0.15s ease-out;
+}
